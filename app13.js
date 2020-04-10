@@ -17,7 +17,7 @@ app.get('/contact', function(req, res) {
 app.get('/profile/:name', function(req, res) {//Attention to ":"
     //instead of sendFile we use render method when we send a view
     let data = {age:29, job:'ninja', hobbies: ['eating', 'fighting', 'reading']}
-    res.render('profile', {person: req.params.name, data: data});//we gonna use person property at profile.ejs, we gonna embed it with "<%= %>" notation
+    res.render('profile', {person: req.params.name, data: data});//we gonna use person property at profile.ejs, we gonna embed it with "<%= %>" notationgit
 
 });
 

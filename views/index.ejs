@@ -6,22 +6,14 @@
     <style>
         body{background: skyblue; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #fff; padding: 30px;}
         h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        h2{font-size: 38px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        p, li{font-size: 16px; text-align: center;}
+        p{font-size: 16px; text-align: center;}
     </style>
     <title>My Node WEB Page</title>
 </head>
 <body>
     <% include partials/nav.ejs %>
-    <h1>Welcome To The Page of <%= person %></h1>
-    <p><strong>Age: </strong><%= data.age %></p>
-    <p><strong>Job: </strong><%= data.job %></p>
-    <h2>Hobbies</h2>
-        <ul>
-            <% data.hobbies.forEach(function(item){ %>
-                <li><%= item %></li>
-            <% }); %>    
-        </ul>
+    <h1>Welcome To My WEB Site</h1>
+    <p>This is the most useful page for learning Node.js</p>
     
 </body>
 </html>
