@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{background: skyblue; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #fff; padding: 30px;}
-        h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        h2{font-size: 38px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
-        p, li{font-size: 16px; text-align: center;}
-    </style>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css" />
     <title>My Node WEB Page</title>
 </head>
 <body>
-    <% include partials/nav.ejs %>
+    
+    <%- include ('partials/nav') %>
     <h1>Welcome To The Page of <%= person %></h1>
     <p><strong>Age: </strong><%= data.age %></p>
     <p><strong>Job: </strong><%= data.job %></p>

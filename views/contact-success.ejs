@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css" type="text/css" />
-    <title>My Node WEB Page</title>
+    <title>Contacts Page</title>
 </head>
 <body>
     <%- include ('partials/nav') %>
-    <h1>Welcome To My WEB Site</h1>
-    <p>This is the most useful page for learning Node.js</p>
-    
+    <h1>Contact US !!!</h1>
+    <p>Thanks for getting in touch!</p>
+    <p>You are contacted with <%= data.who %> at <%= data.department %> department.</p>
+    <p>We will contact with you at <%= data.email %></p>
+
 </body>
 </html>
